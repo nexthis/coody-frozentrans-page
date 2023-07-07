@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+</head>
+
+<body class="text-white bg-primary">
+
+  <header class="bg-primary flex justify-between py-4 px-3">
+    <img src="./src/assets/icons/logo.svg" class="w-59px h-39px" alt="Logo" srcset="">
+
+    <nav class="flex items-center">
+      <ul class="flex gap-2">
+        <li class="button bg-white text-primary">Wyceń usługę</li>
+        <li class="button bg-accent/40 text-white">En</li>
+      </ul>
+    </nav>
+  </header>
+
+  <article class="mb-10">
+
+    <div class="relative">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="./src/assets/hero-lg.png" />
+        <source media="(min-width: 800px)" srcset="./src/assets/hero.png" />
+        <img src="./src/assets/hero.png" class="w-full min-h-400px max-h-500px object-cover" alt="Tło" />
+      </picture>
+
+      <div class="absolute left-0 bottom--25 w-full flex justify-center">
+        <div class="p-5 bg-black/11 backdrop-blur-sm border-1 max-w-710px rounded mx-6 border-#AFACDF">
+          <h1 class="title font-bold mb-5">FROZEN TRANS: transport chłodniczy towarów i ładunków masowych — produkty
+            świeże i mrożone.</h1>
+          <p class="title mb-5">Z punktu wyjścia prosto do celu, w gwarantowanych warunkach.</p>
+          <img src="./src/assets/icons/logo.svg" class="w-40px h-22px" alt="Logo" srcset="">
+        </div>
+      </div>
+    </div>
+
+    <div class="h-25 mb-7 "></div>
+
+    <div class="scrolldown-wrapper mb-2">
+      <div class="scrolldown">
+        <svg height="30" width="10">
+          <circle class="scrolldown-p1" cx="5" cy="15" r="5" />
+        </svg>
+      </div>
+    </div>
+    <p class="text-center uppercase font-bold mb-7">Przewiń w dół</p>
+    <div class="flex justify-center md:hidden">
+      <div class="w-50% h-5px bg-white rounded"></div>
+    </div>
+
+  </article>
+
+
+  <article class="grid grid-cols-2 lg:grid-cols-4 lg:container lg:mt-50 lg:mb-15 gap-3 p-2 mb-5">
+    <div class="p-5 bg-accent/30 border-1 border-accent rounded lg:min-h-400px">
+      <img class="mb-5" src="./src/assets/icons/paperplane.svg" alt="Ikona Samolotu" srcset="">
+      <p class="mb-5 font-bold text-wrap tracking-tighter		 text-18px ">Licencja międzynarodowa</p>
+      <p class="mb-5 text-#AFACDF">Przewóz krajowy i na terenie całej Unii Europejskiej.</p>
+    </div>
+
+    <div class="p-5 bg-accent/30 border-1 border-accent rounded lg:min-h-400px xl:transform  xl:translate-y--18">
+      <img class="mb-5" src="./src/assets/icons/balance.svg" alt="Ikona Samolotu" srcset="">
+      <p class="mb-5 font-bold text-wrap tracking-tighter		 text-18px ">Temperatura kontrolowana</p>
+      <p class="mb-5 text-#AFACDF">Schładzarki szokowe i niezawodne agregaty Thermo King: do –30°.</p>
+    </div>
+
+    <div class="p-5 bg-accent/30 border-1 border-accent rounded lg:min-h-400px xl:transform  xl:translate-y--9">
+      <img class="mb-5" src="./src/assets/icons/rating.svg" alt="Ikona Samolotu" srcset="">
+      <p class="mb-5 font-bold text-wrap tracking-tighter		 text-18px ">Certyfikaty IFS Logistics i GMP+ B4</p>
+      <p class="mb-5 text-#AFACDF">
+        Znak bezpieczeństwa i jakości dla operacji załadunku, rozładunku, magazynowania oraz
+        powiązanych procesów.
+      </p>
+    </div>
+
+    <div class="p-5 bg-accent/30 border-1 border-accent rounded lg:min-h-400px">
+      <img class="mb-5" src="./src/assets/icons/dashboard.svg" alt="Ikona Samolotu" srcset="">
+      <p class="mb-5 font-bold text-wrap tracking-tighter		 text-18px ">Ubezpieczenie OCP</p>
+      <p class="mb-5 text-#AFACDF">Na sytuacje nadzwyczajne: do 250 000 EUR dla każdego nieprzewidzianego zdarzenia.</p>
+    </div>
+  </article>
+
+  <article>
+    <picture>
+      <source media="(min-width: 1024px)" srcset="./src/assets/hero2-lg.png" />
+      <source media="(min-width: 800px)" srcset="./src/assets/hero2.png" />
+      <img src="./src/assets/hero2.png" class="w-full min-h-400px max-h-600px object-cover" alt="Tło" />
+    </picture>
+    <div class="bg-white text-primary px-5 py-6">
+      <div class="xl:container xl:flex xl:gap-10 ">
+        <p class="mb-2 lg:mb-6 text-22px lg:text-26px font-bold tracking-tighter leading-7 lg:flex-1">
+          Nasza profesjonalna flota to kilkanaście zestawów
+          MAN TGX z
+          naczepą w sztywnej
+          zabudowie, a także
+          wywrotki
+          ciężarowe do zbóż, pasz i surowców opałowych.
+        </p>
+        <p class="leading-5 lg:text-22px lg:flex-1">
+          Takie zaplecze pozwala nam sprawnie i pewnie transportować wszelkiego rodzaju ładunki, którym niezbędna jest
+          ochrona przed zmiennymi warunkami otoczenia:
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <section class="py-8 bg-black">
+
+    <marquee loop class="flex justify-center items-center">
+      <p class="uppercase text-26px ">
+        żywność — leki i wyroby farmaceutyczne —
+        elektronika —
+        materiały budowlane —
+        towary
+        wrażliwe
+        — żywność — leki i
+        wyroby farmaceutyczne — elektronika — materiały budowlane — towary wrażliwe […]</p>
+    </marquee>
+
+  </section>
+
+
+  <article class="p-5">
+    <p class="text-23px uppercase font-bold line leading-110% tracking-tighte mb-5">
+      Pewność <br>
+      poparta <br>
+      doświadczeniem <br>
+    </p>
+    <p>
+      FROZEN TRANS jest częścią Grupy Kapitałowej Mielewczyk — lidera w sektorze drobiarskim od 1994 roku. <br> <br>
+
+      Ładunki wymagające szybkości, terminowości i szczególnego zabezpieczenia przewozimy od lat, dzień w dzień, zawsze
+      swoją flotą. Oferujemy również usługi spedycyjne. <br> <br>
+
+      Możesz polegać na tym, że o każdy Twój transport zadbamy tak rzetelnie, jak o własny
+    </p>
+
+    <div class="h-500px relative mt-5">
+      <img class="absolute top-60% left-0" src="./src/assets/grup1.png" alt="Zdjęcie Elementu">
+      <img class="absolute top-29% left-76px" src="./src/assets/grup2.png" alt="Zdjęcie Elementu">
+      <img class="absolute top-0 left-20px" src="./src/assets/grup3.png" alt="Zdjęcie Elementu">
+    </div>
+  </article>
+
+
+  <article class="bg-white text-black px-5 py-6">
+    <div>
+      <p class="leading-5 text-center">
+        Szereg wiodących, odpowiedzialnych producentów regularnie powierza nam swoje wrażliwe towary:
+      </p>
+    </div>
+
+    <div class="py-5 flex justify-center flex-wrap gap-6">
+
+      <img src="./src/assets/icons/audi.svg" alt="audi" srcset="">
+      <img src="./src/assets/icons/mastercard.svg" alt="mastercard" srcset="">
+      <img src="./src/assets/icons/kia.svg" alt="kia" srcset="">
+
+      <img src="./src/assets/icons/intel.svg" alt="intel" srcset="">
+      <img src="./src/assets/icons/intel.svg" alt="intel" srcset="">
+      <img src="./src/assets/icons/ibm.svg" alt="ibm" srcset="">
+
+
+      <img src="./src/assets/icons/mastercard.svg" alt="mastercard" srcset="">
+      <img src="./src/assets/icons/dell.svg" alt="dell" srcset="">
+
+    </div>
+  </article>
+
+
+  <article class="bg-#0B046A">
+    <img src="./src/assets/hero3.png" alt="" srcset="">
+    <div class="px-5 py-6">
+      <p class="title mb-3">Transparentna współpraca</p>
+      <p>Od momentu zlecenia transportu nasz dział obsługi bieżącej pozostaje niezmiennie do Twojej dyspozycji — przez
+        telefon i mailowo.</p>
+    </div>
+  </article>
+
+  <article class="px-5 py-6">
+    <div class="bg-#050235 border-1 border-accent/50 rounded-xl px-5 py-6">
+      <p class="text-center text-18px font-bold mb-2">Aby dokładnie poznać szczegóły oferty, skorzystaj z danych
+        poniżej.</p>
+      <p class="text-center text-18px mb-5">Jeżeli chcesz od razu wycenić transport, przejdź do części:</p>
+      <a href="#" class="button bg-accent/30 w-full block text-center">kontakt</a>
+    </div>
+  </article>
+
+  <footer class="bg-black px-5 py-6">
+    <img src="./src/assets/icons/logo-full.svg" class="max-w-50%" alt="logo">
+    <nav class="mb-10 mt-5">
+      <ul>
+        <li class="my-3">
+          <span class="font-bold">→ oferta, wyceny, praca</span> <br>
+          <a href="tel:+48123456789">+48 12 345 67 89</a> <br>
+          <a href="mailto:czemutyle@frozentra.ns">czemutyle@frozentra.ns</a> <br>
+        </li>
+        <li class="my-3">
+          <span class="font-bold">→ obsługa bieżąca zleceń </span> <br>
+          <a href="tel:+48987654321">+48 98 765 43 21</a> <br>
+          <a href="mailto:cosiedzieje@frozentra.ns">cosiedzieje@frozentra.ns</a> <br>
+        </li>
+      </ul>
+    </nav>
+    <div>
+      FROZEN TRANS sp. z o.o. <br>
+      Mroźna 37, 68-420 Ziąb Wielki <br>
+      <br>
+      <div class="text-sm">
+        NIP 123-456-78-99<br>
+        KRS 987-654-321<br>
+        Kapitał zakładowy 0 000 000 PLN<br>
+      </div>
+    </div>
+    <div class="my-3">
+      → wersja językowa
+      <ul class="flex gap-1">
+        <li class="button bg-accent/70 text-white">PL</li>
+        <li class="button bg-accent/40 text-white">En</li>
+      </ul>
+    </div>
+    <p class="text-sm text-gray mt-3">Frozentrans 2023. All Rights Reserved®</p>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
