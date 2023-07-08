@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy-demo": "git push origin :gh-pages && git subtree push --prefix page origin gh-pages"
   },
   "devDependencies": {
     "@unocss/preset-uno": "^0.53.4",
