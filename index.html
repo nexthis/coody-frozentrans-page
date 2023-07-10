@@ -12,11 +12,13 @@
 <body class="text-white bg-primary">
 
   <header class="navbar">
-    <picture>
-      <source media="(min-width: 1024px)" srcset="./src/assets/icons/logo-full.svg" />
-      <source media="(min-width: 800px)" srcset="./src/assets/icons/logo.svg" />
-      <img src="./src/assets/icons/logo.svg" class="navbar__icon" alt="Logo" srcset="">
-    </picture>
+    <a href="/index.html">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="./src/assets/icons/logo-full.svg" />
+        <source media="(min-width: 800px)" srcset="./src/assets/icons/logo.svg" />
+        <img src="./src/assets/icons/logo.svg" class="navbar__icon" alt="Logo" srcset="">
+      </picture>
+    </a>
 
 
     <nav class="flex items-center">
@@ -35,12 +37,16 @@
           <source media="(min-width: 800px)" srcset="./src/assets/hero.webp" />
           <img src="./src/assets/hero.webp" class="w-full min-h-400px max-h-500px object-cover" alt="Tło" />
         </picture>
-        <div class="absolute left-0 bottom--25 w-full flex justify-center">
-          <div class="p-5 bg-black/11 backdrop-blur-sm border-1 max-w-710px rounded mx-6 border-#AFACDF">
-            <h1 class="title font-bold mb-5">FROZEN TRANS: transport chłodniczy towarów i ładunków masowych — produkty
-              świeże i mrożone.</h1>
-            <p class="title mb-5">Z punktu wyjścia prosto do celu, w gwarantowanych warunkach.</p>
-            <img src="./src/assets/icons/logo.svg" class="w-40px h-22px" alt="Logo" srcset="">
+        <div class="blurry-card">
+          <div class="blurry-card__frame">
+            <div class="blurry-card__content">
+              <h1 class="title lg:text-44px font-bold mb-5">FROZEN TRANS: transport chłodniczy towarów i ładunków
+                masowych
+                — produkty
+                świeże i mrożone.</h1>
+              <p class="title lg:text-44px  mb-5">Z punktu wyjścia prosto do celu, w gwarantowanych warunkach.</p>
+              <img src="./src/assets/icons/logo.svg" class="w-40px h-22px" alt="Logo" srcset="">
+            </div>
           </div>
         </div>
       </div>
@@ -57,6 +63,7 @@
         <div class="w-50% h-5px bg-white rounded"></div>
       </div>
     </section>
+
     <section class="cards-stack lg:container">
       <div class="card">
         <img class="card__icon" src="./src/assets/icons/paperplane.svg" alt="Ikona Samolotu" srcset="">
@@ -79,9 +86,11 @@
       <div class="card">
         <img class="card__icon" src="./src/assets/icons/dashboard.svg" alt="Ikona Samolotu" srcset="">
         <p class="card__title">Ubezpieczenie OCP</p>
-        <p class="card__description">Na sytuacje nadzwyczajne: do 250 000 EUR dla każdego nieprzewidzianego zdarzenia.</p>
+        <p class="card__description">Na sytuacje nadzwyczajne: do 250 000 EUR dla każdego nieprzewidzianego zdarzenia.
+        </p>
       </div>
     </section>
+
     <section>
       <picture>
         <source media="(min-width: 1024px)" srcset="./src/assets/hero2-lg.webp" />
@@ -105,6 +114,7 @@
         </div>
       </div>
     </section>
+
     <section class="py-8 bg-black ">
       <marquee loop class="flex justify-center items-center">
         <p class="uppercase text-26px ">
@@ -117,7 +127,8 @@
           wyroby farmaceutyczne — elektronika — materiały budowlane — towary wrażliwe […]</p>
       </marquee>
     </section>
-    <section class="p-5 lg:container lg:grid grid-cols-12">
+
+    <section class="p-5 lg:container lg:grid grid-cols-12 lg:py-8">
       <div class="w-full lg:col-span-4 lg:flex lg:flex-col lg:justify-center">
         <p class="text-23px lg:text-44px uppercase font-bold line leading-110% tracking-tighte mb-5">
           Pewność <br>
@@ -132,12 +143,30 @@
           Możesz polegać na tym, że o każdy Twój transport zadbamy tak rzetelnie, jak o własny
         </p>
       </div>
-      <div class="h-500px w-full relative mt-5 lg:col-span-8 lg:h-670px">
-        <img class="absolute top-60% left-0" src="./src/assets/grup1.webp" alt="Zdjęcie Elementu">
-        <img class="absolute top-29% left-76px" src="./src/assets/grup2.webp" alt="Zdjęcie Elementu">
-        <img class="absolute top-0 left-20px" src="./src/assets/grup3.webp" alt="Zdjęcie Elementu">
+      <div class="h-500px w-full relative mt-5 lg:col-span-8 lg:h-670px lg:overflow-hidden 2xl:overflow-unset">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="./src/assets/grup1-lg.webp" />
+          <source media="(min-width: 800px)" srcset="./src/assets/grup1.webp" />
+          <img class="absolute top-60% left-0 lg:top-0 lg:left-50%" src="./src/assets/grup1.webp"
+            alt="Zdjęcie Elementu">
+        </picture>
+
+        <picture>
+          <source media="(min-width: 1024px)" srcset="./src/assets/grup2-lg.webp" />
+          <source media="(min-width: 800px)" srcset="./src/assets/grup2.webp" />
+          <img class="absolute top-29% left-76px lg:top-22% lg:left-60%" src="./src/assets/grup2.webp"
+            alt="Zdjęcie Elementu">
+        </picture>
+
+        <picture>
+          <source media="(min-width: 1024px)" srcset="./src/assets/grup3-lg.webp" />
+          <source media="(min-width: 800px)" srcset="./src/assets/grup3.webp" />
+          <img class="absolute top-0 left-20px lg:top-50% lg:left-20%" src="./src/assets/grup3.webp"
+            alt="Zdjęcie Elementu">
+        </picture>
       </div>
     </section>
+
     <section class="bg-white text-black px-5 py-6 lg:py-15">
       <div class="lg:mb-10">
         <p class="leading-5 text-center lg:text-22px">
@@ -173,6 +202,7 @@
           telefon i mailowo.</p>
       </div>
     </section>
+
     <section class="px-5 py-6 lg-py-20">
       <div class="bg-#050235 border-1 border-accent/50 rounded-xl px-5 py-6 mx-a max-w-760px lg:px-40 lg:py-15">
         <p class="text-center text-18px lg:text-22px lg:leading-8 font-bold mb-2">
@@ -187,38 +217,35 @@
         <a href="./contact.html" class="button bg-accent/30 w-full block text-center">kontakt</a>
       </div>
     </section>
+
   </main>
 
-  <footer class="bg-black px-5 py-6 lg:px-10 lg:py-10">
+  <footer class="footer">
     <img src="./src/assets/icons/logo-full.svg" class="max-w-50% lg:w-400px " alt="logo">
 
-    <div class="lg:flex lg:justify-between lg:items-end lg:my-5">
-
-      <nav class="mb-10 mt-5 lg:mb-0 lg:flex lg:gap-10">
-        <ul class="lg:flex lg:gap-12 mb-5 lg:mb-0">
-          <li class="my-3 lg:my-0">
-            <span class="font-bold">→ oferta, wyceny, praca</span> <br>
-            <a href="tel:+48123456789" class="text-accent text-2xl ">+48 12 345 67 89</a> <br>
-            <a href="mailto:czemutyle@frozentra.ns" class="text-accent text-2xl">czemutyle@frozentra.ns</a> <br>
+    <div class="footer__content">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <span class="font-bold text-18px">→ oferta, wyceny, praca</span> <br>
+            <a href="tel:+48123456789" class="text-accent text-22px ">+48 12 345 67 89</a> <br>
+            <a href="mailto:czemutyle@frozentra.ns" class="text-accent text-22px">czemutyle@frozentra.ns</a> <br>
           </li>
-          <li class="my-3 lg:my-0">
-            <span class="font-bold">→ obsługa bieżąca zleceń </span> <br>
-            <a href="tel:+48987654321" class="text-accent text-2xl">+48 98 765 43 21</a> <br>
-            <a href="mailto:cosiedzieje@frozentra.ns" class="text-accent text-2xl">cosiedzieje@frozentra.ns</a> <br>
+          <li class="footer__item">
+            <span class="font-bold text-18px">→ obsługa bieżąca zleceń </span> <br>
+            <a href="tel:+48987654321" class="text-accent text-22px">+48 98 765 43 21</a> <br>
+            <a href="mailto:cosiedzieje@frozentra.ns" class="text-accent text-22px">cosiedzieje@frozentra.ns</a> <br>
           </li>
         </ul>
-
-        <div class="my-3 lg:my-0">
-          → wersja językowa
+        <div class="footer__item">
+          <span class="font-bold text-18px">→ wersja językowa</span>
           <ul class="flex gap-1">
             <li class="button bg-accent/70 text-white">PL</li>
             <li class="button bg-accent/40 text-white">En</li>
           </ul>
         </div>
-
       </nav>
-
-      <div>
+      <div class="text-20px ">
         FROZEN TRANS sp. z o.o. <br>
         Mroźna 37, 68-420 Ziąb Wielki <br>
         <br>

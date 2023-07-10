@@ -32,7 +32,6 @@
     }
 }
 
-
 .button {
     font-size: 18px;
     font-style: normal;
@@ -45,7 +44,6 @@
     border-radius: 4px;
 }
 
-
 .title {
     font-size: 23px;
     font-style: normal;
@@ -53,4 +51,44 @@
     line-height: 110%;
     letter-spacing: -0.46px;
     text-transform: uppercase;
+}
+
+
+.blurry-card {
+    @apply absolute left-0 bottom--25 w-full flex justify-center lg\:max-h-300px lg\:overflow-hidden;
+
+    &__frame {
+        @apply p-5 bg-black/11 backdrop-blur-sm border-1 max-w-710px rounded mx-6 border-#AFACDF;
+    }
+
+    &__content {
+        transition: transform ease-in-out 2s;
+
+        &:hover {
+            transform: translateY(-233px);
+        }
+    }
+
+}
+
+
+
+.footer {
+    @apply: bg-black px-5 py-6 lg\:px-10 lg\:py-10;
+
+    &__content {
+        @apply: lg\:flex lg\:justify-between lg\:items-end lg\:my-5;
+    }
+
+    &__nav {
+        @apply: mb-10 mt-5 lg\:mb-0 lg\:flex lg\:gap-10;
+    }
+
+    &__list {
+        @apply: lg\:flex lg\:gap-12 mb-5 lg\:mb-0;
+    }
+
+    &__item {
+        @apply: my-3 lg: my-0;
+    }
 }
