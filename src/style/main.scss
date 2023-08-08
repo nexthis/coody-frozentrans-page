@@ -1,11 +1,64 @@
 @import "scrolldown";
 @import "font";
+//Flatpickr
+@import "flatpickr/dist/flatpickr.css";
 
+.flatpickr-calendar.inline {
+    background-color: #26207a;
+    border: unset;
+    box-shadow: unset;
+    color: white;
+    width: 100%;
 
+    &::before,
+    &::after {
+        content: none;
+    }
+}
+
+.flatpickr-innerContainer {
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months:hover {
+    background-color: #26207a;
+}
+
+.flatpickr-months .flatpickr-month {
+    color: white;
+    fill: white;
+}
+
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month {
+    color: white;
+    fill: white;
+}
+
+span.flatpickr-weekday {
+    color: white;
+}
+
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled:hover,
+.flatpickr-day.prevMonthDay,
+.flatpickr-day.nextMonthDay,
+.flatpickr-day.notAllowed,
+.flatpickr-day.notAllowed.prevMonthDay,
+.flatpickr-day.notAllowed.nextMonthDay {
+    color: rgba(161, 161, 161, 0.3);
+
+}
+
+.flatpickr-day {
+    color: white;
+
+}
 
 .navbar {
-    @apply bg-primary flex justify-between py-4 px-3 sticky top-0 left-0 z-36 lg\:py-6 lg\:px-20;
-    box-shadow: 0px -6px 29px 0px #0B046A;
+    @apply bg-primary flex justify-between py-4 px-3 sticky top-0 left-0 z-36 lg\:py-[42px] lg\:px-[60px];
+    box-shadow: 0px -6px 29px 0px #04012b;
 
     &__icon {
         @apply w-59px h-39px lg\:w-225px lg\:h-45px;
@@ -74,21 +127,36 @@
 
 
 .footer {
-    @apply: bg-black px-5 py-6 lg\:px-10 lg\:py-10;
+    padding: 28px 32px;
+    background: black;
+
+    &__space {
+        margin-bottom: 52px;
+    }
+
+    @media (min-width: 1024px) {
+        padding: 28px 80px;
+    }
+}
+
+.footer-list {
+    &__title {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
 
     &__content {
-        @apply: lg\:flex lg\:justify-between lg\:items-end lg\:my-5;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.18px;
     }
 
-    &__nav {
-        @apply: mb-10 mt-5 lg\:mb-0 lg\:flex lg\:gap-10;
-    }
-
-    &__list {
-        @apply: lg\:flex lg\:gap-12 mb-5 lg\:mb-0;
-    }
-
-    &__item {
-        @apply: my-3 lg: my-0;
+    &__space {
+        margin-bottom: 33px;
     }
 }

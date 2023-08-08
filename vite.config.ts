@@ -4,7 +4,7 @@ import UnoCSS from 'unocss/vite'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: "/coody-frozentrans-page/",
+  //base: "/coody-frozentrans-page/",
   build: {
     rollupOptions: {
       input: {

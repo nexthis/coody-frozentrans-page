@@ -12,7 +12,7 @@
 <body class="text-white bg-primary">
 
   <header class="navbar">
-    <a href="/index.html">
+    <a href="/">
       <picture>
         <source media="(min-width: 1024px)" srcset="./src/assets/icons/logo-full.svg" />
         <source media="(min-width: 800px)" srcset="./src/assets/icons/logo.svg" />
@@ -53,9 +53,9 @@
       <div class="h-25 mb-7 "></div>
       <div class="scrolldown-wrapper mb-2">
         <div class="scrolldown">
-          <svg height="30" width="10">
-            <circle class="scrolldown-p1" cx="5" cy="15" r="5" />
-          </svg>
+          <div class="scrolldown-p1">
+          </div>
+
         </div>
       </div>
       <p class="text-center uppercase font-bold mb-7">Przewiń w dół</p>
@@ -97,7 +97,7 @@
         <source media="(min-width: 800px)" srcset="./src/assets/hero2.webp" />
         <img src="./src/assets/hero2.webp" class="w-full min-h-400px max-h-600px object-cover" alt="Tło" />
       </picture>
-      <div class="bg-white text-primary px-5 py-6 lg-py-15">
+      <div class="bg-white text-#0B046A px-5 py-6 lg-py-15">
         <div class="xl:container xl:flex xl:gap-10 ">
           <p class="mb-2 lg:mb-6 text-22px lg:text-26px font-bold tracking-tighter leading-7 lg:leading-8 lg:flex-1">
             Nasza profesjonalna flota to kilkanaście zestawów
@@ -115,8 +115,8 @@
       </div>
     </section>
 
-    <section class="py-8 bg-black ">
-      <marquee loop class="flex justify-center items-center">
+    <section class="py-8 bg-#050235 ">
+      <marquee loop scrollamount="20" class="flex justify-center items-center">
         <p class="uppercase text-26px ">
           żywność — leki i wyroby farmaceutyczne —
           elektronika —
@@ -167,15 +167,16 @@
       </div>
     </section>
 
-    <section class="bg-white text-black px-5 py-6 lg:py-15">
+    <section class="bg-white text-#050235 px-5 py-6 lg:py-15">
       <div class="lg:mb-10">
-        <p class="leading-5 text-center lg:text-22px">
+        <p class="leading-5 text-center lg:text-22px lg:leading-28px lg:tracking--0.33px">
           Szereg wiodących, odpowiedzialnych producentów <br class="hidden md:block"> regularnie powierza nam swoje
           wrażliwe
           towary:
         </p>
       </div>
-      <div class="py-5 flex justify-center flex-wrap gap-6 lg:justify-around lg:max-w-850px lg:mx-a">
+      <div
+        class="py-5 flex justify-center flex-wrap gap-6 lg:gap-x-191px lg:gap-y-40px lg:justify-around lg:max-w-861px lg:mx-a">
         <img src="./src/assets/icons/audi.svg" alt="audi" srcset="">
         <img src="./src/assets/icons/mastercard.svg" alt="mastercard" srcset="">
         <img src="./src/assets/icons/kia.svg" alt="kia" srcset="">
@@ -195,67 +196,89 @@
           srcset="">
       </picture>
       <div class="px-5 py-6 flex-1 lg:flex lg:flex-col lg:justify-center lg:items-center lg:px-25 ">
-        <p class="title mb-3 lg:text-44px lg:w-420px">Transparentna współpraca</p>
-        <p class="lg:text-18px lg:w-420px">Od momentu zlecenia transportu nasz dział obsługi bieżącej pozostaje
+        <p class="title mb-3 lg:text-44px lg:w-420px lg:leading-54px lg:tracking--0.88px">Transparentna współpraca</p>
+        <p class="lg:text-18px lg:w-420px lg:leading-22px">Od momentu zlecenia transportu nasz dział obsługi bieżącej
+          pozostaje
           niezmiennie do Twojej
           dyspozycji — przez
           telefon i mailowo.</p>
       </div>
     </section>
 
-    <section class="px-5 py-6 lg-py-20">
-      <div class="bg-#050235 border-1 border-accent/50 rounded-xl px-5 py-6 mx-a max-w-760px lg:px-40 lg:py-15">
-        <p class="text-center text-18px lg:text-22px lg:leading-8 font-bold mb-2">
+    <section class="my-30px lg:my-65px">
+      <div
+        class="bg-#050235 border-1 border-accent rounded-xl mx-28px px-5 py-6 lg:px-150px lg:py-30px md:mx-a max-w-662px ">
+        <p class="text-center text-18px lg:text-22px lg:leading-28px font-bold mb-12px">
           Aby dokładnie poznać szczegóły
           <br lass="hidden lg:block"> oferty, skorzystaj z
           danychponiżej.
         </p>
-        <p class="text-center text-18px lg:text-22px lg:leading-7 mb-5">Jeżeli chcesz od razu wycenić <br
+        <p class="text-center text-18px lg:text-22px lg:leading-28px mb-42px">Jeżeli chcesz od razu wycenić <br
             class="hidden lg:block">
           transport, przejdź do
           części:</p>
-        <a href="./contact.html" class="button bg-accent/30 w-full block text-center">kontakt</a>
+        <a href="./contact.html"
+          class="button bg-#1f2149  border-1 border-accent lg:w-121px mx-a block text-center">kontakt</a>
       </div>
     </section>
 
   </main>
 
   <footer class="footer">
-    <img src="./src/assets/icons/logo-full.svg" class="max-w-50% lg:w-400px " alt="logo">
+    <div class="hidden lg:flex justify-between mb-40px mr-5px">
+      <img src="./src/assets/icons/logo.svg" width="89" height="58" alt="logo" srcset="">
+      <img src="./src/assets/icons/logo-text.svg" width="213" height="35" alt="logo" srcset="">
+    </div>
 
-    <div class="footer__content">
-      <nav class="footer__nav">
-        <ul class="footer__list">
-          <li class="footer__item">
-            <span class="font-bold text-18px">→ oferta, wyceny, praca</span> <br>
-            <a href="tel:+48123456789" class="text-accent text-22px ">+48 12 345 67 89</a> <br>
-            <a href="mailto:czemutyle@frozentra.ns" class="text-accent text-22px">czemutyle@frozentra.ns</a> <br>
-          </li>
-          <li class="footer__item">
-            <span class="font-bold text-18px">→ obsługa bieżąca zleceń </span> <br>
-            <a href="tel:+48987654321" class="text-accent text-22px">+48 98 765 43 21</a> <br>
-            <a href="mailto:cosiedzieje@frozentra.ns" class="text-accent text-22px">cosiedzieje@frozentra.ns</a> <br>
-          </li>
-        </ul>
-        <div class="footer__item">
-          <span class="font-bold text-18px">→ wersja językowa</span>
-          <ul class="flex gap-1">
-            <li class="button bg-accent/70 text-white">PL</li>
-            <li class="button bg-accent/40 text-white">En</li>
-          </ul>
-        </div>
-      </nav>
-      <div class="text-20px ">
+    <img src="./src/assets/icons/logo-full-collapse.svg" class="footer__space block lg:hidden" alt="logo" srcset="">
+
+    <div class="lg:flex lg:justify-between lg:items-end lg:mb-33px">
+      <ul class="footer-list footer__space lg:flex lg:gap-[80px] lg:mb-none">
+        <li class="footer-list__space lg:mb-none">
+          <div class="footer-list__title">→ oferta, wyceny, praca</div>
+          <div class="footer-list__content">
+            <a href="tel:+48123456789">+48 12 345 67 89</a>
+            <br>
+            <a href="mailto:czemutyle@frozentra.ns">czemutyle@frozentra.ns</a>
+          </div>
+        </li>
+        <li>
+          <div class="footer-list__title">→ obsługa bieżąca zleceń</div>
+          <div class="footer-list__content">
+            <a href="tel:+48987654321">+48 98 765 43 21</a>
+            <br>
+            <a href="mailto:cosiedzieje@frozentra.ns">cosiedzieje@frozentra.ns</a>
+          </div>
+        </li>
+        <li class="hidden lg:block">
+          <div>
+            <div class="font-bold text-14px mb-10px">→ wersja językowa</div>
+            <ul class="flex gap-1">
+              <li class="button px-7 bg-#636363/80 text-white">PL</li>
+              <li class="button px-7 bg-#636363/30 text-white">En</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <div class="footer__space lg:max-w-250px  lg:max-h-104px lg:mb-none">
         FROZEN TRANS sp. z o.o. <br>
-        Mroźna 37, 68-420 Ziąb Wielki <br>
-        <br>
-        <div class="text-sm">
-          NIP 123-456-78-99<br>
-          KRS 987-654-321<br>
-          Kapitał zakładowy 0 000 000 PLN<br>
-        </div>
+        Mroźna 37, 68-420 Ziąb Wielki
+        <br> <br>
+        <span class="text-12px">
+          NIP 123-456-78-99 <br>
+          KRS 987-654-321 <br>
+          Kapitał zakładowy 0 000 000 PLN <br>
+        </span>
       </div>
+    </div>
 
+    <div class="footer__space block lg:hidden">
+      <div class="font-bold text-14px mb-[10px]">→ wersja językowa</div>
+      <ul class="flex gap-1">
+        <li class="button bg-#636363/80 text-white">PL</li>
+        <li class="button bg-#636363/30 text-white">En</li>
+      </ul>
     </div>
 
     <p class="text-sm text-gray mt-3 lg:mt-10">Frozentrans 2023. All Rights Reserved®</p>

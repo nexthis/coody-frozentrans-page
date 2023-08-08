@@ -16,6 +16,7 @@
     border-radius: 20px;
     border: 1px solid var(--accent-arctic-blue-02, #AFACDF);
     background: rgba(255, 255, 255, 0.20);
+    overflow: hidden;
 }
 
 .scrolldown-p1 {
@@ -23,6 +24,10 @@
     animation-name: scrolldown;
     animation-iteration-count: infinite;
     fill: #FFFFFF;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 100px;
 }
 
 @keyframes scrolldown {

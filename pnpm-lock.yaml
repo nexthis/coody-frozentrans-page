@@ -8,6 +8,9 @@ dependencies:
   '@unocss/reset':
     specifier: ^0.53.4
     version: 0.53.4
+  flatpickr:
+    specifier: ^4.6.13
+    version: 4.6.13
 
 devDependencies:
   '@unocss/preset-uno':
@@ -703,6 +706,10 @@ packages:
       locate-path: 6.0.0
       path-exists: 4.0.0
     dev: true
+
+  /flatpickr@4.6.13:
+    resolution: {integrity: sha512-97PMG/aywoYpB4IvbvUJi0RQi8vearvU0oov1WW3k0WZPBMrTQVqekSX5CjSG/M4Q3i6A/0FKXC7RyAoAUUSPw==}
+    dev: false
 
   /fsevents@2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
