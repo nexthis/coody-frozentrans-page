@@ -5,6 +5,8 @@ import flatpickr from "flatpickr";
 import { Polish } from "flatpickr/dist/l10n/pl"
 
 
+window.addEventListener("load", () => {
+
 const elements = document.querySelectorAll<HTMLInputElement>('[data-flatpickr]')
 
 
@@ -18,3 +20,5 @@ for (const item of elements) {
     }
     flatpickr(item, config);
 }
+
+})
