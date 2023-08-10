@@ -67,15 +67,13 @@
       <div class="flex flex-col mb-4">
         <label class="text-16px font-bold mb-2" for="when">Kiedy</label>
         <input type="text" id="when" name="when"
-          class="border-1 border-accent/50 bg-#26207a px-3 py-2 rounded-md w-full hidden"
-          data-flatpickr='{  "inline": true }' readonly="readonly">
+          class="border-1 border-accent/50 bg-#26207a px-3 py-2 rounded-md w-full hidden flatpickr" readonly="readonly">
       </div>
 
       <div class="flex flex-col mb-4">
         <label class="text-16px font-bold mb-2" for="when">Na Kiedy</label>
         <input type="text" id="when" name="when"
-          class="border-1 border-accent/50 bg-#26207a px-3 py-2 rounded-md w-full hidden"
-          data-flatpickr='{  "inline": true }' readonly="readonly">
+          class="border-1 border-accent/50 bg-#26207a px-3 py-2 rounded-md w-full hidden flatpickr" readonly="readonly">
       </div>
 
       <div class="flex flex-col mb-4">
@@ -103,8 +101,9 @@
     <div class="bg-white  text-primary p-5 ">
       <div class="lg:flex lg:container lg:py-8">
         <p class="text-23px tracking--0.46px uppercase mb-4 lg:text-44px lg:flex-1">Kariera</p>
-        <div class="lg:flex-1">
-          <p class="text-18px tracking--0.18px font-bold lg:text-26px mb-4">Prowadzimy bazę współpracujących kierowców i
+        <div class="lg:flex-1 lg:max-w-540px">
+          <p class="text-18px tracking--0.18px font-bold lg:text-26px  mb-4">Prowadzimy bazę
+            współpracujących kierowców i
             spedytorów,
             aby
             móc
@@ -160,6 +159,18 @@
 
     <p class="text-sm text-gray mt-3 lg:mt-10">Frozentrans 2023. All Rights Reserved®</p>
   </footer>
+
+
+  <div class="border-#AFACDF border-1 bg-#061367 max-w-718px mx-a p-22px my-50px">
+    <p class="mb-20px text-22px font-bold text-white lg:text-26px lg:leading-30px lg:tracking-0.39px">Dziękujemy za
+      kontakt!</p>
+    <p class="mb-20px text-22px leading-28px tracking-tight lg:text-26px lg:leading-30px lg:tracking-0.39px ">Teraz
+      prosimy: daj nam chwilę, żebyśmy mogli przetworzyć Twoje zapytanie na chłodno.</p>
+    <p class="mb-20px text-16px lg:text-18px lg:leading-22px">W ciągu jednego dnia roboczego wrócimy do Ciebie z gotową
+      ofertą — albo z pytaniami o dalsze
+      szczegóły, bez których nie jesteśmy w stanie zadowalająco przygotować oferty.</p>
+    <button class="button bg-#2e327d border-#6059BF border-1">ZAMKNIJ</button>
+  </div>
 
   <script type="module" src="/src/main.ts"></script>
 </body>

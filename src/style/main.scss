@@ -40,20 +40,67 @@ span.flatpickr-weekday {
     color: white;
 }
 
-.flatpickr-day.flatpickr-disabled,
-.flatpickr-day.flatpickr-disabled:hover,
-.flatpickr-day.prevMonthDay,
-.flatpickr-day.nextMonthDay,
-.flatpickr-day.notAllowed,
-.flatpickr-day.notAllowed.prevMonthDay,
-.flatpickr-day.notAllowed.nextMonthDay {
-    color: rgba(161, 161, 161, 0.3);
 
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled:hover {
+    cursor: not-allowed;
+    color: rgb(57 57 57);
+}
+
+.flatpickr-day.inRange,
+.flatpickr-day.prevMonthDay.inRange,
+.flatpickr-day.nextMonthDay.inRange,
+.flatpickr-day.today.inRange,
+.flatpickr-day.prevMonthDay.today.inRange,
+.flatpickr-day.nextMonthDay.today.inRange,
+.flatpickr-day:hover,
+.flatpickr-day.prevMonthDay:hover,
+.flatpickr-day.nextMonthDay:hover,
+.flatpickr-day:focus,
+.flatpickr-day.prevMonthDay:focus,
+.flatpickr-day.nextMonthDay:focus {
+    color: #ffffff;
+    background: #271eaa;
+    border-color: #271eaa;
+}
+
+
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange,
+.flatpickr-day.selected.inRange,
+.flatpickr-day.startRange.inRange,
+.flatpickr-day.endRange.inRange,
+.flatpickr-day.selected:focus,
+.flatpickr-day.startRange:focus,
+.flatpickr-day.endRange:focus,
+.flatpickr-day.selected:hover,
+.flatpickr-day.startRange:hover,
+.flatpickr-day.endRange:hover,
+.flatpickr-day.selected.prevMonthDay,
+.flatpickr-day.startRange.prevMonthDay,
+.flatpickr-day.endRange.prevMonthDay,
+.flatpickr-day.selected.nextMonthDay,
+.flatpickr-day.startRange.nextMonthDay,
+.flatpickr-day.endRange.nextMonthDay {
+    background: #ffffff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #000000;
+    border-color: #ffffff;
+}
+
+
+.flatpickr-current-month .numInputWrapper span.arrowUp:after {
+    border-bottom-color: rgba(255, 255, 255, 0.9);
+}
+
+.flatpickr-current-month .numInputWrapper span.arrowDown:after {
+    border-top-color: rgba(255, 255, 255, 0.9);
 }
 
 .flatpickr-day {
     color: white;
-
 }
 
 .navbar {
@@ -117,9 +164,12 @@ span.flatpickr-weekday {
     &__content {
         transition: transform ease-in-out 2s;
 
-        &:hover {
-            transform: translateY(-233px);
+        @media (min-width: 1024px) {
+            &:hover {
+                transform: translateY(-233px);
+            }
         }
+
     }
 
 }
@@ -136,6 +186,7 @@ span.flatpickr-weekday {
 
     @media (min-width: 1024px) {
         padding: 28px 80px;
+        border-radius: 12px 12px 0px 0px;
     }
 }
 
