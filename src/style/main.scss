@@ -9,6 +9,10 @@
     box-shadow: unset;
     color: white;
     width: 100%;
+    max-width: 350px;
+    padding: 19px;
+    border: 1.475px solid #6059BF;
+    background: rgba(255, 255, 255, 0.11);
 
     &::before,
     &::after {
@@ -21,6 +25,15 @@
     margin-top: 10px;
 }
 
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+    padding: 0;
+}
+
 .flatpickr-current-month .flatpickr-monthDropdown-months:hover {
     background-color: #26207a;
 }
@@ -28,6 +41,13 @@
 .flatpickr-months .flatpickr-month {
     color: white;
     fill: white;
+
+}
+
+.flatpickr-current-month {
+    width: 233px;
+    font-size: 24px;
+    left: 0;
 }
 
 .flatpickr-months .flatpickr-prev-month,
@@ -36,8 +56,44 @@
     fill: white;
 }
 
+
+.flatpickr-months .flatpickr-prev-month.flatpickr-disabled,
+.flatpickr-months .flatpickr-next-month.flatpickr-disabled {
+    display: block;
+    fill: #4D45B8;
+    cursor: default;
+}
+
+.flatpickr-months .flatpickr-next-month.flatpickr-next-month {
+    right: 22px;
+    top: 25px;
+
+    & svg {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.flatpickr-months .flatpickr-prev-month {
+    right: 52px;
+    top: 25px;
+    left: unset !important;
+
+    & svg {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months,
+.numInput {
+    font-weight: bold !important;
+}
+
+
 span.flatpickr-weekday {
     color: white;
+    font-weight: normal;
 }
 
 
@@ -45,6 +101,19 @@ span.flatpickr-weekday {
 .flatpickr-day.flatpickr-disabled:hover {
     cursor: not-allowed;
     color: rgb(57 57 57);
+}
+
+
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled:hover,
+.flatpickr-day.prevMonthDay,
+.flatpickr-day.nextMonthDay,
+.flatpickr-day.notAllowed,
+.flatpickr-day.notAllowed.prevMonthDay,
+.flatpickr-day.notAllowed.nextMonthDay {
+    border: 0.6px solid var(--accent-arctic-blue-04, #6059BF);
+    background: #26207A;
+    color: white;
 }
 
 .flatpickr-day.inRange,
@@ -99,8 +168,18 @@ span.flatpickr-weekday {
     border-top-color: rgba(255, 255, 255, 0.9);
 }
 
+.dayContainer {
+    gap: 0;
+}
+
 .flatpickr-day {
     color: white;
+    width: 40px;
+    height: 40px;
+    max-width: unset;
+    border-radius: unset;
+    border: 0.6px solid var(--accent-arctic-blue-04, #6059BF);
+    background: #48438F;
 }
 
 .navbar {
@@ -113,7 +192,7 @@ span.flatpickr-weekday {
 }
 
 .cards-stack {
-    @apply grid grid-cols-2 lg\:grid-cols-4 lg\:mt-50 lg\:mb-15 gap-3 p-2 mb-5;
+    @apply grid grid-cols-2 lg\:grid-cols-4 lg\:mt-50 lg\:mb-15 gap-20px p-2 mb-5;
 }
 
 .card {
