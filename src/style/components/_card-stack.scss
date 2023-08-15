@@ -1,0 +1,41 @@
+.cards-stack {
+
+    @apply grid grid-cols-2 gap-11px p-2 mb-5 mx-a lg\:grid-cols-4 lg\:mt-200px lg\:mb-15 lg\:gap-20px lg\:container lg\:max-w-1339px;
+
+    div {
+        transition: transform 1s ease-in;
+
+        &:nth-child(2) {
+            @apply xl\:transform xl\:translate-y--80px;
+        }
+
+        &:nth-child(3) {
+            @apply xl\:transform xl\:translate-y--40px
+        }
+    }
+
+    &.align div {
+        transform: translateY(0)
+    }
+
+
+}
+
+.card {
+    @apply p-5 bg-accent/30 border-1 border-accent rounded h-full lg\:h-437px;
+
+    &__icon {
+        @apply mb-5 lg\:w-90px lg\:h-90px;
+    }
+
+    &__title {
+        @apply mb-5 font-bold text-wrap tracking-tighter text-18px xl\:text-26px;
+    }
+
+    &__description {
+        @apply mb-5 text-#AFACDF xl\:text-22px xl\:leading-28px;
+    }
+
+
+
+}

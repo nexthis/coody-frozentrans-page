@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Frozentrans Page">
   <title>Vite + TS</title>
+  <script type="module" src="/src/main.ts"></script>
 </head>
 
 <body class="text-white bg-primary">
@@ -21,10 +22,10 @@
     </a>
 
 
-    <nav class="flex items-center">
-      <ul class="flex gap-2">
-        <li class="button bg-white text-primary"><a href="./contact.html">Wyceń usługę</a></li>
-        <li class="button bg-accent/40 text-white">En</li>
+    <nav class="navbar__menu">
+      <ul class="navbar__list">
+        <li class="button button--primary"><a href="./contact.html">Wyceń usługę</a></li>
+        <li class="button button--accent">En</li>
       </ul>
     </nav>
   </header>
@@ -40,17 +41,19 @@
         <div class="blurry-card">
           <div class="blurry-card__frame">
             <div class="blurry-card__content">
-              <h1 class="title lg:text-44px font-bold mb-5">FROZEN TRANS: transport chłodniczy towarów i ładunków
+              <h1 class="title lg:text-44px font-bold mb-5">FROZEN TRANS: transport chłodniczy towarów i
+                ładunków
                 masowych
                 — produkty
                 świeże i mrożone.</h1>
-              <p class="title lg:text-44px  mb-5">Z punktu wyjścia prosto do celu, w gwarantowanych warunkach.</p>
+              <p class="title lg:text-44px mb-5">Z punktu wyjścia prosto do celu, w gwarantowanych
+                warunkach.</p>
               <img src="./src/assets/icons/logo.svg" class="w-40px h-22px" alt="Logo" srcset="">
             </div>
           </div>
         </div>
       </div>
-      <div class="h-25 mb-7 "></div>
+      <div class="h-25 mb-7"></div>
       <div class="scrolldown-wrapper mb-2">
         <div class="scrolldown">
           <div class="scrolldown-p1">
@@ -64,18 +67,18 @@
       </div>
     </section>
 
-    <section class="cards-stack lg:container lg:max-w-1320px">
+    <section class="cards-stack">
       <div class="card">
         <img class="card__icon" src="./src/assets/icons/paperplane.svg" alt="Ikona Samolotu" srcset="">
         <p class="card__title">Licencja międzynarodowa</p>
         <p class="card__description">Przewóz krajowy i na terenie całej Unii Europejskiej.</p>
       </div>
-      <div class="card xl:transform xl:translate-y--18">
+      <div class="card ">
         <img class="card__icon" src="./src/assets/icons/balance.svg" alt="Ikona Samolotu" srcset="">
         <p class="card__title">Temperatura kontrolowana</p>
         <p class="card__description">Schładzarki szokowe i niezawodne agregaty Thermo King: do –30°.</p>
       </div>
-      <div class="card xl:transform xl:translate-y--9">
+      <div class="card ">
         <img class="card__icon" src="./src/assets/icons/rating.svg" alt="Ikona Samolotu" srcset="">
         <p class="card__title">Certyfikaty IFS Logistics i GMP+ B4</p>
         <p class="card__description">
@@ -100,7 +103,7 @@
       <div class="bg-white text-#0B046A px-5 py-6 lg-py-15">
         <div class="xl:container xl:flex xl:justify-between xl:max-w-1289px xl:gap-10 ">
           <p
-            class="mb-12px lg:mb-6 text-22px font-bold tracking-tighter leading-7 lg:tracking--0.39px xl:max-w-619px lg:text-26px lg:leading-30px lg:flex-1">
+            class="mb-12px lg:mb-6 text-22px font-bold tracking-tighter leading-7 lg:tracking--0.39px xl:max-w-619px lg:text-26px lg:leading-32px lg:flex-1">
             Nasza profesjonalna flota to kilkanaście zestawów
             MAN TGX z
             naczepą w sztywnej
@@ -108,7 +111,7 @@
             wywrotki
             ciężarowe do zbóż, pasz i surowców opałowych.
           </p>
-          <p class="leading-5 lg:leading-7 lg:text-22px lg:flex-1 xl:max-w-619px">
+          <p class="leading-5 lg:leading-28px lg:text-22px lg:flex-1 xl:max-w-619px">
             Takie zaplecze pozwala nam sprawnie i pewnie transportować wszelkiego rodzaju ładunki, którym niezbędna jest
             ochrona przed zmiennymi warunkami otoczenia:
           </p>
@@ -116,29 +119,42 @@
       </div>
     </section>
 
-    <section class="py-8 bg-#050235 ">
-      <marquee loop scrollamount="20" class="flex justify-center items-center">
-        <p class="uppercase text-26px ">
-          żywność — leki i wyroby farmaceutyczne —
-          elektronika —
-          materiały budowlane —
-          towary
-          wrażliwe
-          — żywność — leki i
-          wyroby farmaceutyczne — elektronika — materiały budowlane — towary wrażliwe […]</p>
-      </marquee>
+    <section class="py-8 bg-#050235">
+      <div class="marquee">
+        <div class="marquee__content">
+          <p class="marquee__item">
+            żywność — leki i wyroby farmaceutyczne —
+            elektronika —
+            materiały budowlane —
+            towary
+            wrażliwe
+            — żywność — leki i
+            wyroby farmaceutyczne — elektronika — materiały budowlane — towary wrażliwe […]
+          </p>
+          <p class="marquee__item ml-40px">
+            żywność — leki i wyroby farmaceutyczne —
+            elektronika —
+            materiały budowlane —
+            towary
+            wrażliwe
+            — żywność — leki i
+            wyroby farmaceutyczne — elektronika — materiały budowlane — towary wrażliwe […]
+          </p>
+        </div>
+      </div>
+
     </section>
 
     <div class="bg-#0B046A">
       <section class="py-32px! px-22px! lg:container lg:grid grid-cols-12 lg:py-8 ">
         <div class="w-full lg:col-span-4 lg:flex lg:flex-col lg:justify-center">
           <p
-            class="text-23px leading-110% lg:text-44px uppercase font-bold line lg:leading-54px lg:tracking--0.88px mb-24px lg:mb-47px">
+            class="text-23px leading-28px lg:text-44px uppercase font-bold line lg:leading-56px lg:tracking--0.88px mb-24px lg:mb-47px">
             Pewność <br>
             poparta <br>
             doświadczeniem <br>
           </p>
-          <p class="lg:text-18px lg:leading-22px lg:tracking--0.18px">
+          <p class="lg:text-18px lg:leading-28px lg:tracking--0.18px">
             FROZEN TRANS jest częścią Grupy Kapitałowej Mielewczyk — lidera w sektorze drobiarskim od 1994 roku. <br>
             <br>
             Ładunki wymagające szybkości, terminowości i szczególnego zabezpieczenia przewozimy od lat, dzień w dzień,
@@ -148,17 +164,17 @@
           </p>
         </div>
         <div
-          class="h-500px images-group w-full relative mt-5 lg:col-span-8 lg:h-670px overflow-hidden 2xl:overflow-unset">
+          class="h-464px max-w-346px mx-a images-group w-full relative mt-66px lg:md:max-w-none lg:mt-5 lg:col-span-8 lg:h-670px overflow-hidden 2xl:overflow-unset">
 
 
-          <img class="absolute top-0 left-40px image-3 lg:top-50% lg:left-20%" src="images/images/grup3.webp"
+          <img class="absolute top-0 left-18px image-3 lg:top-50% lg:left-20%" src="./src/assets/grup3.webp"
             alt="Zdjęcie Elementu">
 
 
-          <img class="absolute top-29% left-100px image-2 lg:top-22% lg:left-60%" src="images/images/grup2.webp"
+          <img class="absolute top-142px left-87px image-2 lg:top-22% lg:left-60%" src="./src/assets/grup2.webp"
             alt="Zdjęcie Elementu">
 
-          <img class="absolute top-60% left-10px image-1 lg:top-0 lg:left-50%" src="images/images/grup1.webp"
+          <img class="absolute top-291px left-0 image-1 lg:top-0 lg:left-50%" src="./src/assets/grup1.webp"
             alt="Zdjęcie Elementu">
 
         </div>
@@ -167,7 +183,8 @@
 
     <section class="bg-white text-#050235 px-5 py-6 lg:py-15">
       <div class="lg:mb-10">
-        <p class="leading-5 text-center lg:text-22px lg:leading-28px lg:tracking--0.33px">
+        <p
+          class="leading-5 text-16px max-w-333px mx-a text-center md:max-w-none lg:text-22px lg:leading-28px lg:tracking--0.33px">
           Szereg wiodących, odpowiedzialnych producentów <br class="hidden md:block"> regularnie powierza nam swoje
           wrażliwe
           towary:
@@ -186,18 +203,20 @@
         <img src="./src/assets/icons/dell.svg" alt="dell" srcset="">
       </div>
     </section>
-    <section class="bg-#0B046A  lg:flex">
+
+    <section class="bg-#0B046A lg:flex">
       <picture class="flex-1">
         <source media="(min-width: 1024px)" srcset="./src/assets/hero3-lg.webp" />
         <source media="(min-width: 800px)" srcset="./src/assets/hero3.webp" />
         <img src="./src/assets/hero3.webp" class="w-full object-cover max-h-500px lg:max-h-a lg:min-h-400px" alt=""
           srcset="">
       </picture>
-      <div class="px-5 py-6 flex-1 lg:flex lg:flex-col lg:justify-center lg:items-start lg:px-25 ">
-        <p class="title mb-3 lg:max-w-420px xl:ml-130px lg:text-44px  lg:leading-54px lg:tracking--0.88px">
+      <div class="px-5 py-6 flex-1 lg:flex lg:flex-col lg:justify-center lg:items-start lg:px-0 ">
+        <p class="title mb-3 lg:max-w-420px lg:ml-50px xl:ml-130px lg:text-44px  lg:leading-56px lg:tracking--0.88px">
           Transparentna współpraca
         </p>
-        <p class="lg:text-18px lg:max-w-420px xl:ml-130px lg:leading-22px">Od momentu zlecenia transportu nasz dział
+        <p class="lg:text-18px lg:max-w-420px lg:ml-50px xl:ml-130px lg:leading-28px">Od momentu zlecenia transportu
+          nasz dział
           obsługi
           bieżącej
           pozostaje
@@ -234,10 +253,13 @@
 
     <img src="./src/assets/icons/logo-full-collapse.svg" class="footer__space block lg:hidden" alt="logo" srcset="">
 
-    <div class="lg:flex lg:justify-between lg:items-end lg:mb-33px">
-      <ul class="footer-list footer__space lg:flex lg:gap-[80px] lg:mb-none">
+    <div class="footer__container">
+      <ul class="footer-list footer__space ">
         <li class="footer-list__space lg:mb-none">
-          <div class="footer-list__title">→ oferta, wyceny, praca</div>
+          <div class="footer-list__title">
+            <span class="inline-block transform translate-y--2px">→</span>
+            oferta, wyceny, praca
+          </div>
           <div class="footer-list__content">
             <a href="tel:+48123456789">+48 12 345 67 89</a>
             <br>
@@ -245,7 +267,10 @@
           </div>
         </li>
         <li>
-          <div class="footer-list__title">→ obsługa bieżąca zleceń</div>
+          <div class="footer-list__title">
+            <span class="inline-block transform translate-y--2px">→</span>
+            obsługa bieżąca zleceń
+          </div>
           <div class="footer-list__content">
             <a href="tel:+48987654321">+48 98 765 43 21</a>
             <br>
@@ -254,10 +279,13 @@
         </li>
         <li class="hidden lg:block">
           <div>
-            <div class="font-bold text-14px mb-10px">→ wersja językowa</div>
+            <div class="font-bold text-14px mb-10px">
+              <span class="inline-block transform translate-y--2px">→</span>
+              wersja językowa
+            </div>
             <ul class="flex gap-1">
-              <li class="button px-7 bg-#636363/80 text-white">PL</li>
-              <li class="button px-7 bg-#636363/30 text-white">En</li>
+              <li><a class="button block px-7 bg-#636363/80 text-white" href="/pl">PL</a></li>
+              <li><a class="button block px-7 bg-#636363/30 text-white" href="/en">En</a></li>
             </ul>
           </div>
         </li>
@@ -276,17 +304,18 @@
     </div>
 
     <div class="footer__space block lg:hidden">
-      <div class="font-bold text-14px mb-[10px]">→ wersja językowa</div>
+      <div class="font-bold text-14px mb-10px"><span class="inline-block transform translate-y--2px">→</span> wersja
+        językowa</div>
       <ul class="flex gap-1">
-        <li class="button bg-#636363/80 text-white">PL</li>
-        <li class="button bg-#636363/30 text-white">En</li>
+        <li><a class="button block bg-#636363/80 text-white" href="/pl">PL</a></li>
+        <li><a class="button block bg-#636363/30 text-white" href="/en">En</a></li>
       </ul>
     </div>
 
     <p class="text-sm text-gray mt-3 lg:mt-10">Frozentrans 2023. All Rights Reserved®</p>
   </footer>
 
-  <script type="module" src="/src/main.ts"></script>
+
 </body>
 
 </html>

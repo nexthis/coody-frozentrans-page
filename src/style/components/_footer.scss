@@ -1,0 +1,38 @@
+.footer {
+
+    @apply py-28px px-32px bg-black lg\:py-28px lg\:px-80px lg\:rounded-t-12px;
+
+    &__space {
+        @apply mb-52px;
+    }
+
+    &__container {
+        @apply lg\:flex lg\:justify-between lg\:items-end lg\:mb-33px;
+    }
+
+}
+
+.footer-list {
+
+    @apply lg\:flex lg\:gap-80px lg\:mb-none;
+
+    &__title {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+
+    &__content {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.18px;
+    }
+
+    &__space {
+        margin-bottom: 33px;
+    }
+}

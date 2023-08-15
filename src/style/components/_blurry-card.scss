@@ -1,0 +1,19 @@
+.blurry-card {
+    @apply absolute left-0 bottom--25 w-full flex justify-center lg\:max-h-437px lg\:overflow-hidden;
+
+    &__frame {
+        @apply p-5 bg-black/11 backdrop-blur-sm border-1 max-w-710px lg\:max-h-297px rounded mx-6 border-#AFACDF;
+    }
+
+    &__content {
+        transition: transform ease-in-out 2s;
+
+        @media (min-width: 1024px) {
+            &:hover {
+                transform: translateY(-231px);
+            }
+        }
+
+    }
+
+}

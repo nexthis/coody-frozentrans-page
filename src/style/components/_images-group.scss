@@ -1,0 +1,40 @@
+.images-group {
+    @media (min-width: 1024px) {
+        .image-1 {
+            animation: animation-images-group-2 3s linear infinite alternate;
+        }
+
+        .image-2 {
+            animation: animation-images-group-2 3s linear infinite alternate;
+        }
+
+        .image-3 {
+            animation: animation-images-group-3 3s linear infinite alternate;
+        }
+    }
+
+}
+
+@keyframes animation-images-group-2 {
+
+    0% {
+        transform: scale(1) translateX(0);
+
+    }
+
+    100% {
+
+        transform: translateX(-100px) scale(1.2);
+    }
+}
+
+@keyframes animation-images-group-3 {
+
+    0% {
+        transform: scale(1) translateX(0);
+    }
+
+    100% {
+        transform: translateX(300px) scale(0.8);
+    }
+}

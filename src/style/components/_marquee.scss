@@ -1,0 +1,29 @@
+.marquee {
+    max-width: 100%;
+    overflow: hidden;
+    height: 39px;
+
+    &__content {
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        animation: marquee 15s linear infinite;
+    }
+
+
+    &__item {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 26px;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}

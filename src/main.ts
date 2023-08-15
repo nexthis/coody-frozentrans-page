@@ -3,15 +3,16 @@ import '@unocss/reset/tailwind.css'
 import 'virtual:uno.css'
 import flatpickr from "flatpickr";
 import { Polish } from "flatpickr/dist/l10n/pl"
+import { english } from "flatpickr/dist/l10n/default"
 
 
-// window.addEventListener("load", () => {
-
+window.addEventListener("load", () => {
     const elements = document.querySelectorAll<HTMLInputElement>('.flatpickr')
-
+    alert("XD")
 
     for (const item of elements) {
-        let config = { time_24hr: true, locale: Polish, minDate: "today", inline: true} ;
+        const en = item.classList.contains("en")
+        let config = { time_24hr: true, locale: en ? english : Polish, minDate: "today", inline: true} ;
         try{
             config = {...config, ...JSON.parse(item.dataset.flatpickr ?? "")};
         }
@@ -21,4 +22,4 @@ import { Polish } from "flatpickr/dist/l10n/pl"
         flatpickr(item, config);
     }
 
-// })
+})
